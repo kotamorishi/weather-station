@@ -51,7 +51,10 @@ python weather.py
 ```
 
 # Autostart
-Add these lines to /etc/cron.d/weather
+Set up cron.
+
+crontab -e
+
 ```
 @reboot /home/pi/weather-station/wrapper.sh
 ``` 
