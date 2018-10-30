@@ -32,6 +32,19 @@ wget -O current-data.json 'http://api.openweathermap.org/data/2.5/weather?id=616
 wget -O forecast-data.json 'http://api.openweathermap.org/data/2.5/forecast?id=6167865&units=metric&appid=TYPE_YOUR_API_KEY_HERE'
 ```
 
+# Download font and install it to RaspberryPi
+Put the font file(ttf) under this folder.
+```
+/usr/share/fonts/
+```
+
+Personally I am using https://www.dafont.com/8-bit-madness.font and this works great.
+Once you put the file, update the font file name in the script.
+```
+ttf = '/usr/share/fonts/8-Bit Madness.ttf'
+```
+Or you can put font file wherever and adjust the script.
+
 # Start 
 ```
 python weather.py
