@@ -12,7 +12,7 @@ import sys
 
 # Settings - please update following.
 delay = 2
-refresh_interval = 120 # refresh every 120 seconds
+refresh_interval = 600 # refresh every 600 seconds(10 minuites)
 ttf = '/usr/share/fonts/8-Bit Madness.ttf'
 
 serial = i2c(port=1, address=0x3c)
@@ -40,7 +40,7 @@ def main():
                 drawUpdate.bitmap((32,-6), dlIcon, fill=1)
                 drawUpdate.text((32,52), "Updating", font=font12, fill=255)
 
-            #subprocess.check_output(os.path.join(basedir, 'download.sh'), shell=True)
+            subprocess.check_output(os.path.join(basedir, 'download.sh'), shell=True)
             time.sleep(1) # to prevent flickering
         
         with open(os.path.join(basedir, 'current-data.json')) as conditions_data_file:
