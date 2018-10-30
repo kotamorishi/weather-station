@@ -13,6 +13,25 @@ They are providing Current weather data and 5 day/3 hour forecast. please create
 
 Originally this wether-station collect the information from WetherUnderground, however they are no longer provide free weather API keys.
 
+# Download and prepare to use.
+```
+git clone https://github.com/kotamorishi/weather-station
+```
+
+
+# Update your API Key
+
+Sign up for OpenWeatherMap and generate key from here
+
+https://home.openweathermap.org/api_keys
+
+
+Once you've got an API Key, copy and paste it in the download.sh
+```
+wget -O current-data.json 'http://api.openweathermap.org/data/2.5/weather?id=6167865&&units=metric&appid=TYPE_YOUR_API_KEY_HERE'
+wget -O forecast-data.json 'http://api.openweathermap.org/data/2.5/forecast?id=6167865&units=metric&appid=TYPE_YOUR_API_KEY_HERE'
+```
+
 # Start 
 ```
 python weather.py
