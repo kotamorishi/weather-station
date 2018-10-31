@@ -10,7 +10,7 @@ Wiring: Connect Ground and 3.3V to the display from the Raspberry PI. The connec
 # Requirement
 ```
 $ sudo apt-get -y install python-dev python-pip libfreetype6-dev libjpeg8-dev libsdl1.2-dev
-$ sudo pip -y install --upgrade ssd1306
+$ sudo pip install --upgrade ssd1306
 ```
 
 # Gather wether infromation from OpenWetherMap 
