@@ -25,7 +25,7 @@ git clone https://github.com/kotamorishi/weather-station
 ```
 
 
-# Update your API Key
+# Update your API Key and weather ID
 
 Sign up for OpenWeatherMap and generate key from here
 
@@ -34,8 +34,8 @@ https://home.openweathermap.org/api_keys
 
 Once you've got an API Key, copy and paste it in the download.sh
 ```
-wget -O current-data.json 'http://api.openweathermap.org/data/2.5/weather?id=6167865&&units=metric&appid=TYPE_YOUR_API_KEY_HERE'
-wget -O forecast-data.json 'http://api.openweathermap.org/data/2.5/forecast?id=6167865&units=metric&appid=TYPE_YOUR_API_KEY_HERE'
+API_KEY="TYPE_YOUR_API_KEY_HERE"
+WEATHER_ID=6167865
 ```
 
 # Download font and install it to RaspberryPi
