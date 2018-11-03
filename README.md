@@ -1,3 +1,5 @@
+![Image of Weather-station](https://github.com/kotamorishi/weather-station/blob/master/sample.jpg?raw=true)
+
 # weather-station
 Display online weather info on an SSD1306 OLED display. 
 Based on https://ssd1306.readthedocs.io/en/latest/intro.html.
