@@ -1,6 +1,6 @@
-from oled.serial import i2c
-from oled.device import ssd1306
-from oled.render import canvas
+from luma.core.interface.serial import i2c
+from luma.oled.device import ssd1306
+from luma.core.render import canvas
 from PIL import Image, ImageFont, ImageDraw, ImageOps
 import time
 import datetime
